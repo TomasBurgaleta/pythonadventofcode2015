@@ -2,7 +2,7 @@ import Point
 
 floor = 0
 numlineas = 0
-grid = Point(0,0)
+grid = Point(0, 0)
 with open("data01.txt", "r") as archivo:
     for linea in archivo:
         print(linea.strip())

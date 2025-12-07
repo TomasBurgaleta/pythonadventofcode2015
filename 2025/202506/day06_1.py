@@ -28,13 +28,15 @@ with open("data01.txt", "r") as archivo:
         matriz[:, numFila] = numeros
 
     sumando = 0
-    for indice in range (0, rango_numeros):
+    for indice in range (0, len(longitud_numeros)):
         valores_fila = matriz[indice,:]
         operador = fila_operadores[indice]
         if operador == "+":
             suma = suma_valores(valores_fila)
-        else:
+            print("suma ", valores_fila, suma_valores(valores_fila))
+        else :
             suma = multiplicacion_valores(valores_fila)
+            print("multi ", valores_fila, multiplicacion_valores(valores_fila))
         sumando += suma
 
     print(sumando)
